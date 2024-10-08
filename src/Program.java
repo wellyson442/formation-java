@@ -5,6 +5,15 @@ import java.util.Scanner;
 public class Program {
 
 	public static void main(String[] args) {
+		Vehicule v1 = new Vehicule("Audi A3", "Audi", "Gris foncé", 2002, 5);
+		v1.setCouleur("rouge");
+		
+		
+		v1.afficher();
+	}
+
+
+	public static void tableauAleatoireClasser() {
 		System.out.println("Combien de nombres voulez-vous générer ? ");
 		//permet de récupérer ce qu'on saisi dans la console
 		Scanner scanner = new Scanner(System.in);
@@ -26,21 +35,12 @@ public class Program {
 		
 		
 		System.out.println("Tableau initial : ");
-		afficheTableau(arrayToSort);
+		afficherTableau(arrayToSort);
 		
 		System.out.println("Tableau classé : ");
-		afficheTableau(classerTableau(arrayToSort));
-		
+		afficherTableau(classerTableau(arrayToSort));
 	}
-	
 
-	
-	
-	
-	
-	
-	
-	
 	public static int[] classerTableau(int arrayToSort[]) {
 		
 		boolean isSwapped;
@@ -83,7 +83,7 @@ public class Program {
 		return arrayToSort;
 	}
 
-	public static void afficheTableau(int arrayDisplay[]) {
+	public static void afficherTableau(int arrayDisplay[]) {
 		StringBuilder arrayString = new StringBuilder("{ ");
 		
 		for (int i = 0; i < arrayDisplay.length; i++) {
