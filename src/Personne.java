@@ -6,7 +6,7 @@ public class Personne {
 	private int age;
 	
 	public Personne() {
-		this("NOM", "Prenom", 100);
+		this("NOM", "Prenom", 900);
 	}
 	
 	public Personne(String nom, String prenom, int age) {
@@ -14,6 +14,12 @@ public class Personne {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.age = age;
+	}
+	
+	public void afficherPersonne() {
+		System.out.println("Nom : " + this.nom);
+		System.out.println("Prenom : " + this.prenom);
+		System.out.println("Age : " + this.age);
 	}
 	
 	

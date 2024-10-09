@@ -1,16 +1,12 @@
 
-import java.util.Random;
-import java.util.Scanner;
-
 public class Program {
 
 	public static void main(String[] args) {
-		Vehicule v1 = new Vehicule("Audi A3", "Audi", "Gris foncé", 2002, 5);
-		v1.setCouleur("rouge");
+		
+		TeamLeader tl = new TeamLeader("Wellyson", "DOS SANTOS", 25, "Chef d'entreprise", 7000, "Président", 3000);
+		tl.afficherTeamLeader();
 		
 		
-		v1.afficher();
-
 
 	}
 

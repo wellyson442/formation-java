@@ -8,6 +8,11 @@ public class Vehicule {
 	private int annee;
 	private int nbPortes;
 	
+	//Le mot clé static dit qu'il s'agit d'un champs de la classe elle même et pas de l'objet
+	//Si je veux accèder à cette information, je peux accèder directement en faisant NomClass.attributStatic
+	//Peut être utilisé par exemple quand je veux faire des librairies avec des methodes utilitaires
+	public static int compteur = 0;
+	
 	//Constructeur
 	public Vehicule(String nom, String marque, String couleur, int annee, int nbPortes) {
 		this.nom = nom;
