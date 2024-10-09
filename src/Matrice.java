@@ -32,35 +32,35 @@ public class Matrice {
 	
 	public static void afficherNumero(String[][] matrice, int x, int y) {
 		
-		boolean withPause = false;
+		boolean withPause = true;
 		
 		afficher0(matrice, x, y, withPause);
 		
-//		initialiserMatrice(matrice, x, y);
-//		clearConsole();
-//		
-//		afficher8(matrice, x, y, withPause);
-//		
-//		initialiserMatrice(matrice, x, y);
-//		clearConsole();
-//		
-//		afficher3(matrice, x, y, withPause);
-//		
-//		initialiserMatrice(matrice, x, y);
-//		clearConsole();
-//		
-//		afficher5(matrice, x, y, withPause);
+		initialiserMatrice(matrice, x, y);
+		clearConsole();
 		
-//		pause(1000);
-//		initialiserMatrice(matrice, x, y);
+		afficher8(matrice, x, y, withPause);
 		
-//		afficher8(matrice, x, y, withPause);
+		initialiserMatrice(matrice, x, y);
+		clearConsole();
+		
+		afficher3(matrice, x, y, withPause);
+		
+		initialiserMatrice(matrice, x, y);
+		clearConsole();
+		
+		afficher5(matrice, x, y, withPause);
+		
+		pause(1000);
+		initialiserMatrice(matrice, x, y);
+		
+		afficher8(matrice, x, y, withPause);
 		
 		
 		
-//		pause(1000);
-//		clearConsole();
-//		afficherMatrice(matrice, x, y);
+		pause(1000);
+		clearConsole();
+		afficherMatrice(matrice, x, y);
 	}
 
 	public static void afficher0(String[][] matrice, int x, int y, boolean withPause) {
